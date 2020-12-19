@@ -30,7 +30,7 @@ router.post('/register', (req, res) => {
         } else {
             // Create a new user
             console.log('else statement');
-            const newUser = new User({
+            const newUser = new db.User({
                 name: req.body.name,
                 email: req.body.email,
                 password: req.body.password
